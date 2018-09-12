@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+    <include file="src/main/db/changelog-legacy-schema.xml"/>
+    <changeSet id="PLSQL for new features" author="howarddeiner">
+        <sqlFile path="src/main/db/award_bonus/award_bonus.prc" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" />
+        <sqlFile path="src/main/db/between_string/betwnstr.fnc" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" />
+        <sqlFile path="src/main/db/remove_rooms_by_name/remove_rooms_by_name.prc" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" />
+    </changeSet>
+</databaseChangeLog>

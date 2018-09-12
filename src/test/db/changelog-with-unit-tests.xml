@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <include file="src/main/db/changelog.xml"/>
+    <changeSet id="PLSQL utPLSQL tests" author="howarddeiner">
+        <sqlFile path="src/test/db/award_bonus/test_award_bonus.pkb" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" />
+        <sqlFile path="src/test/db/award_bonus/test_award_bonus.pks" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" />
+        <sqlFile path="src/test/db/award_bonus/test_award_employees_data.sql" />
+        <sqlFile path="src/test/db/between_string/test_betwnstr.pkb" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" />
+        <sqlFile path="src/test/db/between_string/test_betwnstr.pks" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" />
+        <sqlFile path="src/test/db/remove_rooms_by_name/test_remove_rooms_by_name.pkb" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" />
+        <sqlFile path="src/test/db/remove_rooms_by_name/test_remove_rooms_by_name.pks" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" />
+        <sqlFile path="src/test/db/remove_rooms_by_name/test_remove_rooms_by_name_rooms_data.sql" />
+    </changeSet>
+</databaseChangeLog>
